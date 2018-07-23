@@ -1,7 +1,11 @@
 # Default is "World"
 # Author: Evan Meshberg
 # Email: emeshberge@gmail.com
+require 'greeter'
 
 name = ARGV.first || "World"
 
-puts "Hello, #{name}!"git 
+greeter = Greeter.new(name)
+puts greeter.greet
+
+#puts "Hello, #{name}!"git 
